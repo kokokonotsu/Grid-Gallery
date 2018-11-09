@@ -10,8 +10,8 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <div class="overlay">
-        <button><a href="javascript:void(0)"><i class="fas fa-times"></i></a></button>
+    <div id="overlay-nav" class="overlay" style="height: 0%">
+        <button onclick="closeNav()"><a href="javascript:void(0)"><i class="fas fa-times"></i></a></button>
         <div class="overlay-content">
             <ul>
                 <a href="#"><li>Home</li></a>
@@ -24,7 +24,7 @@
     <div class="grid">
         <header>
             <div class="header-flex-container">
-                <i class="fas fa-chevron-circle-down overlay-button"></i>
+                <i class="fas fa-chevron-circle-down overlay-button" onclick="openNav()"></i>
             </header>
         </header>
         <main>
