@@ -113,6 +113,21 @@ main{
     width: 100%;
     height: 100%;
 }
+.image-zoom-container{
+    position: relative;
+}
+.image-zoom-lens{
+    position: absolute;
+    border: 1px solid black;
+    width: 60px;
+    height: 60px;
+}
+.image-zoom{
+ border: 1px solid black;
+ border-radius: 2px;
+ width: 320px;
+ height: 320px;
+}
 footer{
     grid-area: footer;
     background-color: var(--footerColor);
