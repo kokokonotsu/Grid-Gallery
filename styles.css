@@ -89,9 +89,9 @@ main{
     height: 100%;
     display: grid;
     grid-template:
-         "title title title" 10%
+         ". . ." 10%
          ". . ." 80%
-         "description description description"
+         ". . ." 10%
          / 33.3% 33.3% 33.3%;
 
 }
@@ -119,14 +119,19 @@ main{
 .image-zoom-lens{
     position: absolute;
     border: 1px solid black;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
-.image-zoom{
+.image-zoom-result{
  border: 1px solid black;
+ position: absolute;
+ bottom: 0;
+ right: 0;
  border-radius: 2px;
- width: 320px;
- height: 320px;
+ width: 300px;
+ height: 300px;
+}
+#zoom-image{
 }
 footer{
     grid-area: footer;

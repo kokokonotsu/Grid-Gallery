@@ -6,10 +6,10 @@ function closeNav(){
 }
 function imageZoom(imgID, resultID){
     var img, lens, result, cx, cy; 
-    var img = document.getElementById(imgID);
+    img = document.getElementById(imgID);
     result = document.getElementById(resultID);
     //Create Lens//
-    lens = document.createElement('div');
+    lens = document.createElement("div");
     lens.setAttribute("class", "img-zoom-lens");
     //Insert Lens into HTML//
     img.parentElement.insertBefore(lens, img);
@@ -17,8 +17,8 @@ function imageZoom(imgID, resultID){
     cx = result.offsetWidth / lens.offsetWidth;
     cy = result.offsetHeight / lens.offsetHeight;
     //Set background properties for the result div//
-    result.style.backgroundImage ="url('" +img.src +"')";
-    result.style.backgroundSize = (img.width * cx) + "px" + (img.height * cy) + "px";
+    result.style.backgroundImage = "url('" + img.src + "')";
+    result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
     //Execute a function when someone moves the cursor over the image, or the lens//
     lens.addEventListener("mouseover", moveLens);
     img.addEventListener("mouseover", moveLens);
@@ -45,6 +45,7 @@ function imageZoom(imgID, resultID){
         lens.style.top = y + "px";
         //Display what the lens sees in the result div//
         result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+        console.log("I am running");
         }
         function getCursorPos(e){
             var a, x = 0, y = 0;
@@ -57,6 +58,7 @@ function imageZoom(imgID, resultID){
             //Consider any page scrolling//
             x = x - window.pageXOffset;
             y = y - window.pageYOffset;
+            console.log("I am running");
             return {x : x, y : y};
         }
 }

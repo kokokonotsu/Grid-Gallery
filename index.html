@@ -28,17 +28,17 @@
             </header>
         </header>
         <main>
-            <div class="main-grid">
+                <div class="image-zoom-container">
+                    <img id="myImage" src="October-Commits-2048x2226-Compressed.png" alt="October Commits" width="600px" height="400px">
+                    <div id="myResult" class="image-zoom-result"></div>
+                </div>
+            <!-- <div class="main-grid"> 
                 <div class="title">
                     So much Text my man.
                 </div>
-                <div class="image-zoom-container">
-                    <img src="October-Commits-2048x2226-Compressed.png" alt="October Commits">
-                    <div class="image-zoom"></div>
-                </div>
                 <div class="description">
-
-                </div>
+                
+                 </div> -->
                 <!-- <img src="Placeholder-Image.jpg" alt="">
                 <img src="Placeholder-Image.jpg" alt="">
                 <img src="Placeholder-Image.jpg" alt="">
@@ -55,11 +55,15 @@
                 <img src="Placeholder-Image.jpg" alt="">
                 <img src="Placeholder-Image.jpg" alt="">
                 <img src="Placeholder-Image.jpg" alt=""> -->
-            </div>
+            <!-- </div> -->
         </main>
         <footer>
 
         </footer>
     </div>
+    <script>
+    imageZoom("myImage", "myResult");
+</script>
 </body>
+
 </html>
